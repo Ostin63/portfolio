@@ -14,14 +14,14 @@
 
 @font-face {
   font-family: 'Buxom';
-  src: url('../fonts/Buxom.woff2') format('woff2');
+  src: url('../fonts/buxom.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Buxom';
-  src: url('../fonts/Buxom.woff') format('woff');
+  src: url('../fonts/buxom.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
