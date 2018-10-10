@@ -12,6 +12,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Buxom';
+  src: url('../fonts/Buxom.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Buxom';
+  src: url('../fonts/Buxom.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -31,9 +45,7 @@ body {
   transition-delay: 50ms;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -42,7 +54,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -56,7 +68,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -76,7 +88,7 @@ input[type="radio"].visually-hidden {
 .header b {
   font-size: 30px;
   line-height: 40px;
-  font-family:  Playfair, Arial, sans-serif;
+  font-family: Playfair, Arial, sans-serif;
 }
 
 .logo {
@@ -93,11 +105,11 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.main-slides{
-  list-style:none;
-  margin:0;
-  padding:0;
-  z-index:-2; 
+.main-slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: -2;
   background: #7e809e;
 }
 
@@ -109,7 +121,7 @@ input[type="radio"].visually-hidden {
   left: 0px;
 }
 
-.main-slides li{
+.main-slides li {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -120,12 +132,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-slides li:nth-child(1) {
-  background: url('../img/main.png') 50% 50% no-repeat; 
+  background: url('../img/main.png') 50% 50% no-repeat;
 }
 
 .main-slides li:nth-child(2) {
   animation-delay: 6.0s;
-  background: url(../img/main-1.png) 50% 50% no-repeat; 
+  background: url(../img/main-1.png) 50% 50% no-repeat;
 }
 
 .main-slides li:nth-child(3) {
@@ -134,11 +146,21 @@ input[type="radio"].visually-hidden {
 }
 
 @keyframes anim_slides {
-  0% {opacity:0;}
-  6% {opacity:1;}
-  24% {opacity:1;}
-  30% {opacity:0;}
-  100% {opacity:0;}
+  0% {
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .main-projects {
@@ -172,8 +194,7 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 }
 
-.my-projects a,
-.my-projects li {
+.my-projects a, .my-projects li {
   width: 80px;
   height: 80px;
   transition-property: all;
@@ -199,10 +220,26 @@ input[type="radio"].visually-hidden {
   left: 7px;
   font-size: 12px;
   line-height: 12px;
+  font-weight: 700;
   transform: rotate(-45deg);
   font-family: 'Kumar One Outline', Arial, sans-serif;
   text-transform: uppercase;
   z-index: 2;
+}
+
+.my-projects .flag-b::after {
+  content: "bootstrap";
+  position: absolute;
+  top: 43px;
+  left: 0;
+  font-size: 16px;
+  line-height: 14px;
+  font-weight: 700;
+  transform: rotate(-45deg);
+  font-family: Buxom, Arial, sans-serif;
+  text-transform: uppercase;
+  z-index: 3;
+  color: #350b0b;
 }
 
 .my-projects a {
@@ -240,8 +277,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 }
 
-.main-footer,
-.main-footer a {
+.main-footer, .main-footer a {
   color: #f3f3f3;
 }
 
@@ -263,27 +299,22 @@ input[type="radio"].visually-hidden {
     transition-duration: 0.5s;
     transition-delay: 50ms;
   }
-
   .logo {
     justify-content: flex-start;
   }
-
   .main-projects {
     padding-top: 5%;
     padding-bottom: 5%;
   }
-
   .main-projects h2 {
     color: #f3f3f3;
   }
-
   .my-projects .flag::before {
     top: 55px;
     left: 7px;
     font-size: 20px;
     line-height: 20px;
   }
-
   .my-projects img {
     width: 75%;
     height: auto;
@@ -291,30 +322,23 @@ input[type="radio"].visually-hidden {
     transition-duration: 0.5s;
     transition-delay: 50ms;
   }
-
   .my-projects {
     padding-top: 5%;
     padding-bottom: 5%;
   }
-
-  .my-projects a,
-  .my-projects li {
+  .my-projects a, .my-projects li {
     width: 125px;
     height: 125px;
     transition-property: all;
     transition-duration: 0.5s;
     transition-delay: 50ms;
   }
-
-  .my-projects li:nth-child(1)::before,
-  .my-projects li:nth-child(6)::before,
-  .my-projects li:nth-child(7)::before {
+  .my-projects li:nth-child(1)::before, .my-projects li:nth-child(6)::before, .my-projects li:nth-child(7)::before {
     top: 55px;
     left: 15px;
     font-size: 18px;
     line-height: 18px;
   }
-
   .contacts {
     width: 18%;
   }
