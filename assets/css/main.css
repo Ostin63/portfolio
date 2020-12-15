@@ -31,7 +31,9 @@ body {
   transition-delay: 50ms;
 }
 
-.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -99,6 +101,10 @@ body {
   background: #7e809e;
 }
 
+.span {
+  margin-top: 7px;
+}
+
 .main-slides {
   position: fixed;
   width: 100%;
@@ -135,15 +141,19 @@ body {
   0% {
     opacity: 0;
   }
+
   6% {
     opacity: 1;
   }
+
   24% {
     opacity: 1;
   }
+
   30% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
@@ -182,7 +192,8 @@ body {
   z-index: 1;
 }
 
-.my-projects a, .my-projects li {
+.my-projects a,
+.my-projects li {
   width: 80px;
   height: 80px;
   transition-property: all;
@@ -261,7 +272,8 @@ body {
   flex-wrap: wrap;
 }
 
-.main-footer, .main-footer a {
+.main-footer,
+.main-footer a {
   color: #f3f3f3;
 }
 
@@ -283,24 +295,30 @@ body {
     transition-duration: 0.5s;
     transition-delay: 50ms;
   }
+
   .logo {
     justify-content: flex-start;
   }
+
   .main-projects h2 {
     color: #f3f3f3;
   }
+
   .main-projects p {
     color: #f3f3f3;
   }
+
   .my-projects .flag::before {
     top: 55px;
     left: 7px;
     font-size: 20px;
     line-height: 20px;
   }
+
   .my-projects .project::after {
     left: 45px;
   }
+
   .my-projects img {
     width: 75%;
     height: auto;
@@ -308,23 +326,30 @@ body {
     transition-duration: 0.5s;
     transition-delay: 50ms;
   }
+
   .my-projects {
     padding-top: 5%;
     padding-bottom: 5%;
   }
-  .my-projects a, .my-projects li {
+
+  .my-projects a,
+  .my-projects li {
     width: 125px;
     height: 125px;
     transition-property: all;
     transition-duration: 0.5s;
     transition-delay: 50ms;
   }
-  .my-projects li:nth-child(1)::before, .my-projects li:nth-child(6)::before, .my-projects li:nth-child(7)::before {
+
+  .my-projects li:nth-child(1)::before,
+  .my-projects li:nth-child(6)::before,
+  .my-projects li:nth-child(7)::before {
     top: 55px;
     left: 15px;
     font-size: 18px;
     line-height: 18px;
   }
+
   .contacts {
     width: 18%;
   }
